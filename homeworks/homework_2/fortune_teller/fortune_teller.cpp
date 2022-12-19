@@ -26,9 +26,9 @@ int main() {
   cout << "Please enter the time of year when you were born: \n(pick from 'spring', 'summer', 'autumn', 'winter')" << endl;
   cin >> time_of_year_born;
   cout << "Please enter an adjective:" << endl;
-  cin >> adjective[1];
+  cin >> adjective[0];
   cout << "Please enter another adjective:" << endl;
-  cin >> adjective[2];
+  cin >> adjective[1];
 
   // cout << name << endl;
   // cout << time_of_year_born << endl;
@@ -45,6 +45,6 @@ int main() {
   // cout << get_noun.at(time_of_year_born) <<endl;
   //cout << arr[name.length() % arr.size()] <<endl;
 
-  cout << name << ", the " << adjective[name.length() % adjective.size() + 1] << " " << get_noun.at(time_of_year_born) << " that " << arr[name.length() % arr.size() + 1] << endl;
+  cout << name << ", the " << adjective[name.length() % adjective.size()] << " " << get_noun.at(time_of_year_born) << " that " << arr[name.length() % arr.size()] << endl;
   return 0;
 }
